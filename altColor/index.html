@@ -1,0 +1,452 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="ie=edge"
+        >
+        <title>TRic Photography</title>
+        <link href="https://fonts.googleapis.com/css?family=Baumans|Open+Sans|Rokkitt:100|Lato|Playfair Display" rel="stylesheet">
+<link rel="stylesheet" href="bundle.css"/>
+    </head>
+    <body>
+        <div class="navigation">
+            <input
+                type="checkbox"
+                class="navigation__checkbox"
+                id="navi-toggle"
+            >
+
+            <label
+                for="navi-toggle"
+                class="navigation__button"
+            >
+                <span class="navigation__icon"></span>
+            </label>
+
+            <div class="navigation__background"></div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            onclick="lib.scrollToSection(event,'header')"
+                            class="navigation__link"
+                        >
+                            <span>01</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            onclick="lib.scrollToSection(event,'section-about')"
+                            class="navigation__link"
+                        >
+                            <span>02</span>
+                            Über TRic
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            onclick="lib.scrollToSection(event,'section-features')"
+                            class="navigation__link"
+                        >
+                            <span>03</span>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            onclick="lib.scrollToSection(event,'section-pricelist')"
+                            class="navigation__link"
+                        >
+                            <span>03</span>
+                            Preise
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>05</span>
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <header
+            id="header"
+            class="header"
+        >
+            <div class="header__logo-box">
+
+                <img
+                    src="img/logo.svg"
+                    alt="logo"
+                    class="header__logo"
+                >
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--sub">Menschen. Tiere. Natur.</span>
+                </h1>
+
+            </div>
+        </header>
+
+        <main>
+
+            <section
+                class="section-about"
+                id="section-about"
+            >
+                <div class="u-center-text u-margin-bottom-big">
+                    <div class="or-spacer">
+
+                        <h2 class="heading-secondary">Fotoshootings der besonderen Art</h2>
+
+                        <div class="mask"></div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Herzlich Willkommen</h3>
+                        <p class="paragraph">
+                            Du hast keine Lust auf gestellte Fotos im Studio? Wir auch nicht! Egal ob Hobby, Haustier oder mit der besten Freundin - bei uns wird dein Shooting zum Erlebnis.
+                        </p>
+                        <a
+                            href="#"
+                            class="btn-text"
+                        >
+                            Über Uns →
+                        </a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img
+                                src="img/portraits/img1.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p1"
+                            >
+                            <img
+                                src="img/portraits/img2.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p2"
+                            >
+                            <img
+                                src="img/portraits/img3.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p3"
+                            >
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section
+                class="section-features"
+                id="section-features"
+            >
+                <div class="row">
+                    <div class="info-box">
+                        <div>
+                            Eine Überschrift wie:
+                            <br>
+                            Portfolio
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Portrait_rund_Final.png"
+                                alt
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Portraits</h3>
+                            <p class="feature-box__text">
+                                Wir rücken euch ins rechte Licht, wenn ihr euch von eurer besten Seite präsentiert.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Tier_Start_rund_FINAL.png"
+                                alt="Tiere"
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Tiere</h3>
+                            <p class="feature-box__text">
+                                Haltet die schönsten Momente mit eurem treuesten Begleiter auf einem Bild fest.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Action-placeholder.png"
+                                alt="Action"
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Passion</h3>
+                            <p class="feature-box__text">
+                                Dein Hobby erfüllt dich mit Glück und Stolz? Dann lass` dich doch bei genau dem darstellen, was du am liebsten tust.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <script src="bundle.js"></script>
+
+            </section>
+            <section
+                class="section-pricelist"
+                id="section-pricelist"
+            >
+                <div class="u-center-text u-margin-bottom-big">
+                    <div class="or-spacer">
+
+                        <h2 class="heading-secondary">Preise</h2>
+
+                        <div class="mask"></div>
+
+                        <!-- <span>
+                            <i>Preise</i>
+                        </span> -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--mini"></div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--mini">Mini</span>
+
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>1 Std Shooting</li>
+                                        <li>1 Location</li>
+                                        <li>5 bearbeitete Bilder 10x15</li>
+                                        <li>1 Highlight AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-mini">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
+                                        <p class="card__price-standard">49,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">34,99€</p>
+
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--basic"></div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--basic">Basic</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>2 Std Shooting</li>
+                                        <li>2 Locations</li>
+                                        <li>10 bearbeitete Bilder 10x15</li>
+                                        <li>3 Highlights AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-basic">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
+                                        <p class="card__price-standard">89,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">59,99€</p>
+
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--premium"></div>
+
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--premium">Premium</span>
+
+                                </h4>
+
+                                <div class="card__details">
+                                    <ul>
+                                        <li>3 Std Shooting</li>
+                                        <li>3 Locations</li>
+                                        <li>15 bearbeitete Bilder 10x15</li>
+                                        <li>7 Highlights AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-premium">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
+                                        <p class="card__price-standard">149,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">99,99€</p>
+
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="info-box info-box--white">
+                        Jedes Paket ist individuell anpassbar und spezielle Wünsche sind nach Absprache möglich.
+                    </div>
+                </div>
+              
+            </section>
+            <footer class="footer">
+                    <div class="footer__logo-box">
+
+                        <img
+                            src="img/logo.svg"
+                            alt="logo"
+                            class="footer__logo"
+                        >
+                    </div>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <div class="footer__contact-box">
+                                <div class="footer__contact-box--home">
+                                    <i class="footer__icon fa fa-home icon-medium icon--white"></i>
+                                    <span class="footer__contact-box--text">
+                                        TRic Photography GbR
+                                        <br>
+                                        Tobias Bindick | Ricarda Grunwald
+                                        <br>
+                                        Gropiusstraße 8 | 48163 Münster
+                                    </span>
+                                </div>
+                                <div class="footer__contact-box--phone">
+                                    <i class="footer__icon fa fa-phone icon-medium icon--white"></i>
+                                    <span class="footer__contact-box--text">0173 403 954</span>
+                                </div>
+
+                                <div class="footer__contact-box--email">
+                                    <i class="footer__icon far fa-envelope icon-medium icon--white"></i>
+
+                                    <span class="footer__contact-box--text">info@tric-photography.de</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="footer__link-box">
+                                <div class="footer__link-box--facebook">
+                                    <a
+                                        class="nostyle"
+                                        href="https://www.facebook.com/tric.photograph/"
+                                    >
+                                        <i class="footer__icon fab fa-facebook-square icon--white icon-medium"></i>
+                                        <span class="footer__link-box--text">Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="footer__link-box--instagram">
+                                    <a
+                                        class="nostyle"
+                                        href="https://www.instagram.com/fuchsblickwinkel_photography/"
+                                    >
+                                        <i class="footer__icon fab fa-instagram icon--white icon-medium"></i>
+                                        <span class="footer__link-box--text">Instagram #1</span>
+                                    </a>
+                                </div>
+                                <div class="footer__link-box--instagram">
+                                    <a
+                                        class="nostyle"
+                                        href="https://www.instagram.com/tobias.bindick_photography/"
+                                    >
+                                        <i class="footer__icon fab fa-instagram icon--white icon-medium"></i>
+                                        <span class="footer__link-box--text">Instagram #2</span>
+                                    </a>
+                                </div>
+                                <div class="footer__link-box--twitter">
+                                    <a
+                                        class="nostyle"
+                                        href="https://twitter.com/tric_photograph"
+                                    >
+                                        <i class="footer__icon fab fa-twitter-square icon--white icon-medium"></i>
+                                        <span class="footer__link-box--text">Twitter</span>
+                                    </a>
+                                </div>
+
+                                <div class="footer__link-box--youtube">
+                                    <a
+                                        class="nostyle"
+                                        href="https://www.youtube.com/channel/UCwzJIp2P6b0Rfug8Syko0KQ"
+                                    >
+                                        <i class="footer__icon fab fa-youtube-square icon--white icon-medium"></i>
+                                        <span class="footer__link-box--text">Youtube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <div class="footer__copyright-box">
+                                <div class="footer__copyright-box--copyright">
+                                    <i class="far fa-copyright icon-medium icon--white"></i>
+                                    <span class="footer__copyright-box--text">Tric Photography 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        </main>
+    </body>
+</html>
