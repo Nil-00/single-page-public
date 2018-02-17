@@ -11,6 +11,7 @@
         >
         <title>TRic Photography</title>
         <link href="https://fonts.googleapis.com/css?family=Baumans|Open+Sans|Rokkitt:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="bundle.css"/>
     </head>
     <body>
@@ -75,6 +76,7 @@
                     <li class="navigation__item">
                         <a
                             href="#"
+                            onclick="lib.scrollToSection(event,'footer')"
                             class="navigation__link"
                         >
                             <span>05</span>
@@ -122,12 +124,6 @@
                         <p class="paragraph">
                             Du hast keine Lust auf gestellte Fotos im Studio? Wir auch nicht! Egal ob Hobby, Haustier oder mit der besten Freundin - bei uns wird dein Shooting zum Erlebnis.
                         </p>
-                        <a
-                            href="#"
-                            class="btn-text"
-                        >
-                            Über TRic →
-                        </a>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
@@ -157,16 +153,12 @@
             >
                 <div class="row">
                     <div class="info-box">
-                        <div>
-                            Eine Überschrift wie:
-                            <br>
-                            Portfolio
-                        </div>
+                        <div class="heading-secondary">Portfolio</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1-of-3">
-                        <div class="feature-box">
+                        <div class="feature-box" onclick="lib.openPopup(event,'popup')">
                             <img
                                 class="feature-box__image"
                                 src="img/Portrait_rund_Final.png"
@@ -337,7 +329,10 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer
+            id="footer"
+            class="footer"
+        >
             <div class="footer__logo-box">
 
                 <img
@@ -409,7 +404,7 @@
                                 <span class="footer__link-box--text">Twitter</span>
                             </a>
                         </div>
-                        
+
                         <div class="footer__link-box--youtube">
                             <a
                                 class="nostyle"
@@ -431,5 +426,27 @@
                 </div>
             </div>
         </footer>
+        <div
+            id="notification"
+            class="notification-container"
+        >
+            <div class="notification">
+                Unsere Seite befindet sich momentan im Umbau.
+            </div>
+            <span class="u-divider"></span>
+            <div class="btn-wrapper" onclick="lib.closeWindow(event,'notification')">
+                <i
+                    id="notification-close"
+                    class="material-icons btn-close"
+                    onclick="lib.closeWindow(event,'notification')"
+                >
+                    close
+                </i>
+            </div>
+        </div>
+        <div id="popup" class="popup" onclick="lib.closePopup(event, 'popup')">
+                <i class="material-icons popup__content--slide popup__content--slide-left">chevron_left</i><img src="img/27574800_2009646815955649_6677601107830636544_n.jpg" width="" class="popup__content" onclick="lib.childClick(event,'')"><i class="material-icons popup__content--slide popup__content--slide-right">chevron_right</i>
+                
+        </div>
     </body>
 </html>
