@@ -11,6 +11,7 @@
         >
         <title>TRic Photography</title>
         <link href="https://fonts.googleapis.com/css?family=Baumans|Open+Sans|Rokkitt:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="bundle.css"/>
     </head>
     <body>
@@ -68,13 +69,14 @@
                             onclick="lib.scrollToSection(event,'section-pricelist')"
                             class="navigation__link"
                         >
-                            <span>03</span>
+                            <span>04</span>
                             Preise
                         </a>
                     </li>
                     <li class="navigation__item">
                         <a
                             href="#"
+                            onclick="lib.scrollToSection(event,'footer')"
                             class="navigation__link"
                         >
                             <span>05</span>
@@ -122,12 +124,6 @@
                         <p class="paragraph">
                             Du hast keine Lust auf gestellte Fotos im Studio? Wir auch nicht! Egal ob Hobby, Haustier oder mit der besten Freundin - bei uns wird dein Shooting zum Erlebnis.
                         </p>
-                        <a
-                            href="#"
-                            class="btn-text"
-                        >
-                            Über Uns →
-                        </a>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
@@ -157,16 +153,15 @@
             >
                 <div class="row">
                     <div class="info-box">
-                        <div>
-                            Eine Überschrift wie:
-                            <br>
-                            Portfolio
-                        </div>
+                        <div class="heading-secondary">Portfolio</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1-of-3">
-                        <div class="feature-box">
+                        <div
+                            class="feature-box"
+                            onclick="lib.initGallery()"
+                        >
                             <img
                                 class="feature-box__image"
                                 src="img/Portrait_rund_Final.png"
@@ -197,8 +192,8 @@
                         <div class="feature-box">
                             <img
                                 class="feature-box__image"
-                                src="img/Action-placeholder.png"
-                                alt="Action"
+                                src="img/passion.png"
+                                alt="Passion"
                             >
                             <h3 class="heading-tertiary u-margin-bottom-small">Passion</h3>
                             <p class="feature-box__text">
@@ -337,7 +332,10 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer
+            id="footer"
+            class="footer"
+        >
             <div class="footer__logo-box">
 
                 <img
@@ -352,7 +350,7 @@
                         <div class="footer__contact-box--home">
                             <i class="footer__icon fa fa-home icon-medium icon--white"></i>
                             <span class="footer__contact-box--text">
-                                TRic Photography GbR
+                                <b>TRic Photography GbR</b>
                                 <br>
                                 Tobias Bindick | Ricarda Grunwald
                                 <br>
@@ -361,7 +359,7 @@
                         </div>
                         <div class="footer__contact-box--phone">
                             <i class="footer__icon fa fa-phone icon-medium icon--white"></i>
-                            <span class="footer__contact-box--text">0173 403 954</span>
+                            <span class="footer__contact-box--text">0173 41 239 54</span>
                         </div>
 
                         <div class="footer__contact-box--email">
@@ -385,19 +383,19 @@
                         <div class="footer__link-box--instagram">
                             <a
                                 class="nostyle"
-                                href="https://www.instagram.com/fuchsblickwinkel_photography/"
+                                href="https://www.instagram.com/tobias.bindick_photography/"
                             >
                                 <i class="footer__icon fab fa-instagram icon--white icon-medium"></i>
-                                <span class="footer__link-box--text">Instagram #1</span>
+                                <span class="footer__link-box--text">Instagram T</span>
                             </a>
                         </div>
                         <div class="footer__link-box--instagram">
                             <a
                                 class="nostyle"
-                                href="https://www.instagram.com/tobias.bindick_photography/"
+                                href="https://www.instagram.com/fuchsblickwinkel_photography/"
                             >
                                 <i class="footer__icon fab fa-instagram icon--white icon-medium"></i>
-                                <span class="footer__link-box--text">Instagram #2</span>
+                                <span class="footer__link-box--text">Instagram Ric</span>
                             </a>
                         </div>
                         <div class="footer__link-box--twitter">
@@ -409,7 +407,7 @@
                                 <span class="footer__link-box--text">Twitter</span>
                             </a>
                         </div>
-                        
+
                         <div class="footer__link-box--youtube">
                             <a
                                 class="nostyle"
@@ -425,11 +423,132 @@
                     <div class="footer__copyright-box">
                         <div class="footer__copyright-box--copyright">
                             <i class="far fa-copyright icon-medium icon--white"></i>
-                            <span class="footer__copyright-box--text">Tric Photography 2017</span>
+                            <span class="footer__copyright-box--text">Tric Photography 2018</span>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <div
+            id="notification"
+            class="notification-container"
+        >
+            <div class="notification">
+                Unsere Seite befindet sich momentan im Umbau.
+            </div>
+            <span class="u-divider"></span>
+            <div
+                class="btn-wrapper"
+                onclick="lib.closeWindow(event,'notification')"
+            >
+                <i
+                    id="notification-close"
+                    class="material-icons btn-close"
+                    onclick="lib.closeWindow(event,'notification')"
+                >
+                    close
+                </i>
+            </div>
+        </div>
+        <!-- <div
+            id="popup"
+            class="popup"
+            onclick="lib.closePopup(event, 'popup')"
+        >
+            <i class="material-icons popup__content--slide popup__content--slide-left">chevron_left</i>
+            <img
+                src="img/27574800_2009646815955649_6677601107830636544_n.jpg"
+                width
+                class="popup__content"
+                onclick="lib.childClick(event,'')"
+            >
+            <i class="material-icons popup__content--slide popup__content--slide-right">chevron_right</i>
+
+        </div> -->
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div
+            class="pswp"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+
+            <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!-- Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button
+                            class="pswp__button pswp__button--close"
+                            title="Close (Esc)"
+                        ></button>
+
+                        <button
+                            class="pswp__button pswp__button--fs"
+                            title="Toggle fullscreen"
+                        ></button>
+
+                        <button
+                            class="pswp__button pswp__button--zoom"
+                            title="Zoom in/out"
+                        ></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button
+                        class="pswp__button pswp__button--arrow--left"
+                        title="Previous (arrow left)"
+                    >
+                    </button>
+
+                    <button
+                        class="pswp__button pswp__button--arrow--right"
+                        title="Next (arrow right)"
+                    >
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </body>
 </html>
